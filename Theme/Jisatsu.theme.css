@@ -1,0 +1,49 @@
+/**
+* @name Jisatsu's Theme
+* @description Jisatsu's Custom Discord Theme!
+* @author Jisatsu
+* @version 1.0
+*/
+
+/* === Import Font === */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght~400;600;700&display=swap');
+/* === Settings === */
+:root {
+  /* Background Link */
+  --background-image: url("https://imgur.com/a/xjHiokm#HmDphkL"); /* Change this to i.imgur link of your own gif*/
+
+  /* Accents */
+  --accent-primary: #b56dff;
+  --accent-hover: #c78eff;
+  --accent-active: #d7aaff;
+  --text-color: #e9dfff;
+
+  /* Glass Effect */
+  --glass-blur: 8px;
+  --glass-brightness: 0.9;
+}
+
+/* === Background === */
+body {
+    background: var(--background-image) center center / cover no-repeat fixed !important;
+}
+
+/* Transparency */
+.appMount-2yBXZl,
+.app-2CXKsg,
+.bg-1QIAus,
+.layers-OrUESM,
+.layer-86YKbF,
+.chat-2ZfjoI,
+.container-2cd8Mz,
+.chatContent,
+.content-1jQy2l,
+.container-3wLKDe,
+.membersWrap-3NUR2t,
+.sidebar-1tnWFu,
+.scroller-3X7KbA {
+  background: rgba(20, 10, 30, 0.25) !important;
+  backdrop-filter: blur(var(--glass-blur)) brightness(var(--glass-brightness));
+}
+
+/* === Texts & Accents === */
