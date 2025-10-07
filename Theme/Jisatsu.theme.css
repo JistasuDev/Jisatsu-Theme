@@ -47,3 +47,105 @@ body {
 }
 
 /* === Texts & Accents === */
+:root {
+  --brand-experiment: var(--accent-primary);
+  --brand-experiment-500: var(--accent-hover);
+  --text-normal: var(--text-color);
+  --interactive-active: var(--accent-active);
+  --interactive-hvoer: var(--accent-hover);
+}
+
+/* === Buttons, Inputs & Hover Effects === */
+.button-1EGGcP,
+.lookFilled-1Gx00P,
+.lookOutlined-3sRXeN,
+.textArea-2CLwUE,
+.inputDefault-3FGxgL,
+.searchBar-3TnChZ,
+.input-3r5zZY {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(181, 109, 255, 0.3) !important;
+  color: var(--text-color) !important;
+  backdrop-filter: blur(var(--glass-blur));
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 0 6px rgba(181, 109, 255, 0.25);
+}
+
+.button-1EGGcP:hover,
+.lookFilled-1Gx00P:hover,
+.lookOutlined-3sRXeN:hover,
+.inputDefault-3FGxgL:hover,
+.textArea-2CLwUE:hover {
+  background: rgba(181, 109, 255, 0.15) !important;
+  box-shadow: 0 0 12px var(--glow-hover);
+}
+
+/* === ScrollBars === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(181, 109, 255, 0.35);
+  border-radius: 4px;
+}
+
+/* === Misc === */
+::selection {
+  background: rgba(181, 109, 255, 0.3);
+}
+
+.scrollableContainer-15eg7h {
+  background: transparent !important;
+}
+
+/* Avatars & user icons */
+.avatar-1BDn8e,
+.avatar-3uk_u9 {
+  border-radius: 50% !important;
+  box-shadow: 0 0 10px rgba(181, 109, 255, 0.25);
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+.avatar-1BDn8e:hover,
+.avatar-3uk_u9:hover {
+  box-shadow: 0 0 15px var(--glow-hover);
+}
+
+/* Channel hover glow */
+.containerDefault-YUSmu3:hover {
+  background: rgba(181, 109, 255, 0.08) !important;
+  border-left: 2px solid var(--accent-hover);
+  box-shadow: inset 0 0 10px var(--glow-color);
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+/* Active channel */
+.modeSelected-3DmyhH .content-1gYQeQ {
+  background: rgba(181, 109, 255, 0.15) !important;
+  border-left: 3px solid var(--accent-primary);
+  box-shadow: 0 0 10px var(--glow-color);
+}
+
+/* Header blur */
+.title-31SJ6t,
+.container-ZMc96U {
+  background: rgba(15, 5, 25, 0.4) !important;
+  backdrop-filter: blur(var(--glass-blur));
+}
+
+/* === ANIMATIONS === */
+.appMount-2yBXZl {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Glow hover on buttons & icons */
+.button-1EGGcP:hover,
+.icon-2xnN2Y:hover,
+.tabBar-3DfKkN .item-3XjbnG:hover {
+  filter: drop-shadow(0 0 6px var(--glow-hover));
+}
